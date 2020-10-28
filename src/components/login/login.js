@@ -41,14 +41,14 @@ class Login extends Component {
        
     }
 
-    ifUserSignedIn() {
+    ifUserSignedIn(Component) {
         if (this.state.isSignedIn == null) {
             return (
                 <p></p>
             )
         }
         return this.state.isSignedIn ?
-               <p>Sucessfully logged In</p>: <LoginPage />
+              <Component />: <LoginPage />
     }
     componentDidMount() {
         console.log('Loading....!!')
@@ -59,7 +59,7 @@ class Login extends Component {
         return (
             <BrowserRouter>
                 <Switch>
-                    <Route exact path = "/" render = {()=>this.ifUserSignedIn()}></Route>
+                    <Route exact path = "/" render = {()=>this.ifUserSignedIn(Dashboard)}></Route>
                 </Switch>
             </BrowserRouter>
         )
@@ -90,51 +90,51 @@ class LoginPage extends Component {
 }
 
 
-// class Dashboard extends Component {
+class Dashboard extends Component {
 
-//     componentDidMount() {
-//         window.gapi.load('auth2', function() {
-//             window.gapi.auth2.init({
-//                 client_id: "958511751255-tq0dgsvsilr2na11hiih0tmi0d3t3nig.apps.googleusercontent.com"
-//             })
-//             console.log('init()')
-//         })
+    componentDidMount() {
+        window.gapi.load('auth2', function() {
+            window.gapi.auth2.init({
+                client_id: "958511751255-tq0dgsvsilr2na11hiih0tmi0d3t3nig.apps.googleusercontent.com"
+            })
+            console.log('init()')
+        })
      
-//     }
+    }
     
-//     signOut() {
-//         var auth2 = window.gapi.auth2.getAuthInstance()
-//         // auth2.init()
-//         auth2.signOut().then(() => {
-//             // auth2.disconnect()
-//             document.location.reload()
-//         })
-//         console.log('iuehfihsd')
-//     }
+    signOut() {
+        var auth2 = window.gapi.auth2.getAuthInstance()
+        // auth2.init()
+        auth2.signOut().then(() => {
+            // auth2.disconnect()
+            document.location.reload()
+        })
+        console.log('iuehfihsd')
+    }
     
-//     render() {
+    render() {
 
-//         const authInstance = window.gapi.auth2.getAuthInstance()
-//         const currUser = authInstance.currentUser.get()
-//         const profile = currUser.getBasicProfile()
-//         const email = profile.getEmail()
-//         const name = profile.getName()
-//         const imageUrl = profile.getImageUrl()
-//         // console.log(authInstance)
-//         return (
-//             <div>{email}
-//             <br />
-//                 <img src={imageUrl} alt= "null"/>
-//                 <p>{name}</p>
+        const authInstance = window.gapi.auth2.getAuthInstance()
+        const currUser = authInstance.currentUser.get()
+        const profile = currUser.getBasicProfile()
+        const email = profile.getEmail()
+        const name = profile.getName()
+        const imageUrl = profile.getImageUrl()
+        // console.log(authInstance)
+        return (
+            <div>{email}
+            <br />
+                <img src={imageUrl} alt= "null"/>
+                <p>{name}</p>
 
-//                 <button onClick = {this.signOut()}>Sign Out</button>
+                <button onClick = {this.signOut()}>Sign Out</button>
                 
-//             </div>
+            </div>
             
-//         )
+        )
     
-//     }
-// }
+    }
+}
 
 
 
