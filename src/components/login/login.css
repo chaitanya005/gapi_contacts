@@ -1,0 +1,124 @@
+.Rectangle {
+  position: relative;
+  width: 483px;
+  height: 450px;
+  left: 550px;
+  top: 95px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(5, 62, 209, 0.19);
+  border-radius: 10px;
+}
+
+.para {
+  position: absolute;
+  width: 223px;
+  height: 30px;
+  margin-left: 130px;
+  top: 60px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+
+  color: #222222;
+}
+
+/* image 12 */
+
+.img {
+  position: absolute;
+  width: 30.93px;
+  height: 32px;
+  left: 226px;
+  top: 40px;
+  bottom: 12px;
+}
+
+.email {
+  position: absolute;
+  width: 401px;
+  height: 60px;
+  left: 41px;
+  top: 162px;
+  /* background: #ffffff; */
+  border: 1px solid #0a45c2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.51px;
+}
+
+.password {
+  position: absolute;
+  width: 401px;
+  height: 60px;
+  left: 41px;
+  top: 246px;
+  /* background: #ffffff; */
+  border: 1px solid #0a45c2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.51px;
+}
+
+.button {
+  position: absolute;
+  width: 401px;
+  height: 60px;
+  margin-left: 130px;
+  top: 350px;
+  border-radius: 4px;
+  line-height: 30px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+}
+
+.innerVectorOne {
+  width: 654px;
+  height: 608px;
+}
+
+@media (max-width: 500px) {
+  .Rectangle {
+    left: 50px;
+    top: 250px;
+    width: 500px;
+    height: 500px;
+  }
+
+  .para {
+    margin-left: 140px;
+    width: 300px;
+  }
+
+  .img {
+    left: 240px;
+  }
+
+  .password,
+  .email {
+    left: 60px;
+  }
+
+  .button {
+    margin-left: 140px;
+    /* width: 220px; */
+  }
+}

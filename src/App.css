@@ -1,0 +1,143 @@
+.App {
+  background-color: #e5e5e5;
+  /* width: 100px; */
+  height: 100vh;
+}
+
+.ellipse {
+  width: 18.5px;
+  height: 21.35px;
+  top: 125.15px;
+  left: 1484.5px;
+  position: absolute;
+  /* border: 0.4px solid #0c4ab7; */
+}
+
+.vectorTwo {
+  position: absolute;
+  width: 387.1px;
+  height: 491.2px;
+  left: 1140.4px;
+  top: 159.8px;
+
+  /* border: 0.4px solid  #0c4ab7; */
+}
+
+.vectorOne {
+  position: absolute;
+  /* width: 653.5px; */
+  /* height: 606px; */
+  left: 0px;
+  top: 4px;
+
+  /* border: 0.4px solid #0c4ab7; */
+}
+
+.ellipseTwo {
+  position: absolute;
+  width: 26px;
+  height: 24px;
+  left: 1430.5px;
+  top: 222.5px;
+
+  /* border: 0.4px solid #0c4ab7; */
+}
+
+.ellipseThree {
+  position: absolute;
+  width: 18.88px;
+  height: 32px;
+  left: 1481.12px;
+  top: 592px;
+
+  /* border: 0.4px solid #0c4ab7; */
+}
+
+.ellipseFour {
+  position: absolute;
+  width: 11.21px;
+  height: 18px;
+  left: 1382px;
+  top: 502px;
+
+  /* border: 0.4px solid #0c4ab7; */
+}
+
+.ellipseFive {
+  position: absolute;
+  width: 60.5px;
+  height: 34.96px;
+  left: 10.5px;
+  top: 537.54px;
+
+  /* border: 0.4px solid #0C4AB7; */
+}
+
+.ellipseSix {
+  position: absolute;
+  width: 18px;
+  height: 13.39px;
+  left: 112.5px;
+  top: 182.5px;
+
+  /* border: 0.4px solid #0c4ab7; */
+}
+
+.svgone {
+  width: 654px;
+  height: 608px;
+}
+
+.svgTwo {
+  width: 387px;
+  height: 491px;
+}
+
+@media (max-width: 500px) {
+  .App {
+    width: 590px;
+    height: 1050px;
+  }
+}
+
+@media (min-height: 800px) {
+  .App {
+    height: 1280px;
+  }
+}
+
+@media (max-width: 500px) {
+  .svgone {
+    width: 454px;
+    height: 508px;
+  }
+
+  .vectorTwo {
+    left: 400px;
+    width: 187px;
+    height: 291px;
+  }
+
+  .svgTwo {
+    width: 187px;
+    height: 291px;
+  }
+
+  .ellipse {
+    left: 550px;
+  }
+
+  .ellipseTwo {
+    left: 520px;
+  }
+
+  .ellipseThree {
+    left: 570px;
+    top: 350px;
+  }
+
+  .ellipseFour {
+    top: 367px;
+    left: 545px;
+  }
+}
