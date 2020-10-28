@@ -48,7 +48,7 @@ class Login extends Component {
             )
         }
         return this.state.isSignedIn ?
-               <p>Pandaga chesko babai!!!</p>: <LoginPage />
+               <p>Sucessfully logged In</p>: <LoginPage />
     }
     componentDidMount() {
         console.log('Loading....!!')
