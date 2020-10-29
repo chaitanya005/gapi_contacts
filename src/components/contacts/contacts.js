@@ -1,10 +1,15 @@
 import React , {Component} from 'react'
+import Navbar from "./Navbar/Nav"
 
 var ID_TOKEN = ''
 
+
+
 class Dashboard extends Component {
-    state = {
-        isLoaded: false
+
+    constructor(props) {
+        super(props) 
+        this.signout = this.signout.bind(this)
     }
 
     insertGapiScript() {
@@ -45,24 +50,15 @@ class Dashboard extends Component {
        this.insertGapiScript()
     }
 
-    sigout(){
-        var auth2 = window.gapi.auth2.getAuthInstance()
-        if (auth2.isSignedIn.get()) {
-            auth2.signOut().then(() => {
-                console.log('signed Out')
-            }).then(() => {
-                localStorage.setItem(ID_TOKEN, null)
-            })
-        }else {
-            auth2.signIn();
-        }
 
+    signout() {
+        window.gapi.auth2.getAuthInstance().disconnect()
+        console.log('sign out')
+        alert('signout')
     }
     
     
     render() {
-
-
         const authInstance = window.gapi.auth2.getAuthInstance()
         const currUser = authInstance.currentUser.get()
         const profile = currUser.getBasicProfile()
@@ -71,20 +67,14 @@ class Dashboard extends Component {
         const imageUrl = profile.getImageUrl()
         console.log(authInstance)
         return (
-            <div>{email}
-            <br />
-                <img src =  {imageUrl} alt = "img"/>
-                {name}
-               
-                    <button onClick = {this.sigout}>Sign Out</button>
-                    <br />
-                    
-                
-                
+            <div>
+            <Navbar 
+            email = {email}
+            name = {name}
+            img = {imageUrl}
+            />
             </div>
-            
         )
-    
     }
 }
 
