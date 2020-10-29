@@ -1,10 +1,7 @@
 import React , { Component } from 'react'
 import classes from './App.css';
-
 import Login from './components/login/login'
-// import Glogin from "./components/googlelogin/googleLogin"
 
-//AIzaSyC2PCUOjSlPxdGwybxJ90CzjnKCG27hOWA - api key
 class App extends Component {
   render() {
     return (

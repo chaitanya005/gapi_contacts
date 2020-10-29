@@ -53,8 +53,6 @@ class Dashboard extends Component {
 
     signout() {
         window.gapi.auth2.getAuthInstance().disconnect()
-        console.log('sign out')
-        alert('signout')
     }
     
     
@@ -72,6 +70,7 @@ class Dashboard extends Component {
             email = {email}
             name = {name}
             img = {imageUrl}
+            signout = {this.signout}
             />
             </div>
         )

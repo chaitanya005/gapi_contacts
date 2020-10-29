@@ -81,8 +81,6 @@ class LoginPage extends Component {
                     <input className  = {classes.email} type = "text" placeholder = "Email"/>
                     <input className  = {classes.password} type = "text" placeholder = "Password" />
                     <div id = "login-button" className =  {classes.button} style = {{width: '220px'}}></div>
-                    <button onClick = {() => {console.log('cliked')}}>CLick</button>
-                   
                 </div>
             </div>
         )

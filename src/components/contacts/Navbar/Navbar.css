@@ -86,6 +86,30 @@
   transform: rotate(-25.13deg);
 }
 
+.shapeCircle {
+  position: absolute;
+  width: 28.37px;
+  height: 29.88px;
+  top: 24px;
+  left: 1300px;
+}
+
+.shapeRightAngle {
+  position: absolute;
+  left: 1315px;
+  width: 5.33px;
+  height: 10.67px;
+  top: 31px;
+}
+
+.shapeLine {
+  position: absolute;
+  width: 22.41px;
+  height: 1.42px;
+  top: 25px;
+  left: 1295px;
+}
+
 @media (max-width: 500px) {
   .Navbar {
     width: 590px;
@@ -98,5 +122,17 @@
   .mail,
   .name {
     left: 115px;
+  }
+
+  .shapeCircle {
+    left: 500px;
+  }
+
+  .shapeLine {
+    left: 495px;
+  }
+
+  .shapeRightAngle {
+    left: 515px;
   }
 }
