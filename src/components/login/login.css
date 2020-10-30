@@ -31,6 +31,27 @@
   color: #222222;
 }
 
+.txt {
+  position: absolute;
+  width: 223px;
+  height: 30px;
+  margin-left: 225px;
+  top: 150px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+
+  color: #222222;
+}
+
 /* image 12 */
 
 .img {
@@ -47,7 +68,7 @@
   width: 401px;
   height: 60px;
   left: 41px;
-  top: 162px;
+  top: 212px;
   /* background: #ffffff; */
   border: 1px solid #0a45c2;
   box-sizing: border-box;
@@ -63,7 +84,7 @@
   width: 401px;
   height: 60px;
   left: 41px;
-  top: 246px;
+  top: 286px;
   /* background: #ffffff; */
   border: 1px solid #0a45c2;
   box-sizing: border-box;
@@ -74,12 +95,12 @@
   line-height: 24.51px;
 }
 
-.button {
+.gButton {
   position: absolute;
   width: 401px;
   height: 60px;
   margin-left: 130px;
-  top: 350px;
+  top: 336px;
   border-radius: 4px;
   line-height: 30px;
   /* identical to box height */
@@ -88,6 +109,44 @@
   align-items: center;
   letter-spacing: 0.08em;
   color: #ffffff;
+}
+
+.button {
+  position: absolute;
+  width: 401px;
+  height: 60px;
+  left: 40px;
+  top: 370px;
+
+  background: #0a45c2;
+  border-radius: 4px;
+  line-height: 30px;
+  border: 1px solid #0a45c2;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
+  color: #ffffff;
+}
+
+.btnText {
+  position: absolute;
+  width: 78px;
+  height: 30px;
+  left: 162px;
+  top: 1px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.08em;
 }
 
 .innerVectorOne {
@@ -117,8 +176,15 @@
     left: 60px;
   }
 
-  .button {
+  .gButton {
     margin-left: 140px;
     /* width: 220px; */
+  }
+  .txt {
+    margin-left: 230px;
+  }
+
+  .button {
+    left: 60px;
   }
 }

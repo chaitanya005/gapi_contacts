@@ -1,5 +1,7 @@
 import React , {Component} from 'react'
 import Navbar from "./Navbar/Nav"
+import ContactList from "./contact_list/contact_list"
+
 
 var ID_TOKEN = ''
 
@@ -52,7 +54,7 @@ class Dashboard extends Component {
 
 
     signout() {
-        window.gapi.auth2.getAuthInstance().disconnect()
+        window.gapi.auth2.getAuthInstance().signOut()
     }
     
     
@@ -72,6 +74,11 @@ class Dashboard extends Component {
             img = {imageUrl}
             signout = {this.signout}
             />
+           
+            <ContactList />
+
+           
+            
             </div>
         )
     }

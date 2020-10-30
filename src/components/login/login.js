@@ -78,9 +78,11 @@ class LoginPage extends Component {
                 <div className = {classes.Rectangle}>
                     <img className = {classes.img} src =  "/image.png" alt = "" />
                     <p className = {classes.para}>Sign in with Google</p>
+                    <div id = "login-button" className = {classes.gButton} style = {{width: '220px', top: '110px'}}></div>
+                    <p className = {classes.txt}>Or</p>
                     <input className  = {classes.email} type = "text" placeholder = "Email"/>
                     <input className  = {classes.password} type = "text" placeholder = "Password" />
-                    <div id = "login-button" className =  {classes.button} style = {{width: '220px'}}></div>
+                    <button  className = {classes.button}><p className = {classes.btnText}>Sign In</p></button>
                 </div>
             </div>
         )

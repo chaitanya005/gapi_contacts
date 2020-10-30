@@ -1,0 +1,44 @@
+.scrollbar {
+  position: absolute;
+  width: 6px;
+  height: 440px;
+  left: 1103px;
+  top: 203px;
+
+  background: #f4f7ff;
+  border-radius: 4px;
+}
+
+.scroller {
+  position: absolute;
+  width: 6px;
+  height: 47.8px;
+  left: 1103px;
+  top: 203px;
+
+  background: #053ed1;
+  border-radius: 4px;
+}
+
+.scrollHostContainer {
+  position: relative;
+  /* height: 100%; */
+}
+
+.scrollhost {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollhost::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollhost {
+  overflow: hidden;
+  overflow-y: scroll;
+  /* height: 100%; */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  position: relative;
+}
